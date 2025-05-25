@@ -14,24 +14,23 @@ Startup profitability is influenced by various types of spending and strategic d
 ## 🗂 Project Structure
 
 ```startup-profit-prediction/
-├── code/                               # Jupyter Notebook & HTML version
-│ ├── project_code.ipynb
-│ └── code.html
-├── data/                              # Dataset
+├── code/                                # Jupyter Notebook version
+│ └── project_code.ipynb
+├── data/                                # Dataset
 │ └── 50_Startups.csv
-├── notebooks/                          # Experimental notebooks (optional)
+├── notebooks/                           # Experimental notebooks (optional)
 │ └── README.md
-├── scripts/                            # Python scripts for modular code
+├── scripts/                             # Python scripts for modular code
 │ ├── preprocessing.py
 │ └── model.py
-├── docs/                               # Project overview & documentation
+├── docs/                                # Project overview & documentation
 │ └── overview.md
 ├── PROJCT_report.pdf                    # Project report (PDF)
-├── README.md                             # You're reading this file 📘
-├── requirements.txt                       # Python dependencies
-├── .gitignore                              # Ignored files
-├── LICENSE                                # Open source license
-└── CONTRIBUTING.md                         # Contribution guide
+├── README.md                            # You're reading this file 📘
+├── requirements.txt                     # Python dependencies
+├── .gitignore                           # Ignored files
+├── LICENSE                              # Open source license
+└── CONTRIBUTING.md                      # Contribution guide
 ```
 
 ---
