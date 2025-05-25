@@ -5,6 +5,8 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.svm import SVR
+from sklearn.ensemble import GradientBoostingRegressor
 
 def split_data(df, target_column='Profit', test_size=0.2, random_state=42):
     X = df.drop(columns=[target_column])
@@ -13,6 +15,16 @@ def split_data(df, target_column='Profit', test_size=0.2, random_state=42):
 
 def train_linear_regression(X_train, y_train):
     model = LinearRegression()
+    model.fit(X_train, y_train)
+    return model
+
+def train_svr(X_train, y_train, kernel='rbf'):
+    model = SVR(kernel=kernel)
+    model.fit(X_train, y_train)
+    return model
+
+def train_gradient_boosting(X_train, y_train, n_estimators=100):
+    model = GradientBoostingRegressor(n_estimators=n_estimators, random_state=42)
     model.fit(X_train, y_train)
     return model
 
